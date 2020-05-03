@@ -15,7 +15,7 @@ public interface PLLiveAccountService {
      * 修改直播频道分类名称
      *
      * @param request 修改直播频道分类名称请求类
-     * @return
+     * @return 响应结果
      */
     PLLiveCommonResult changeChannelClassificationName(ChangeChannelClassificationNameRequest request);
 }

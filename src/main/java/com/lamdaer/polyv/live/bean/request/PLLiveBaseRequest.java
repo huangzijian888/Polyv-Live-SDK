@@ -73,7 +73,7 @@ public abstract class PLLiveBaseRequest {
      * 签名生成函数
      *
      * @param parameter 需要参与签名的参数集合
-     * @param appSecret 直播后台->开发设置->身份认证->AppSecret
+     * @param appSecret 直播后台-开发设置-身份认证-AppSecret
      * @return 签名值
      */
     public String generateSign(Map<String, Object> parameter, String appSecret) {

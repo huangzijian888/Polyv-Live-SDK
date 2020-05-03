@@ -33,7 +33,7 @@ public abstract class PLLiveRequestAbstractService {
      *
      * @param url    接口地址
      * @param params 请求参数
-     * @return
+     * @return 响应结果
      */
     protected PLLiveCommonResult postRequest(String url, Map<String, Object> params) {
         String result = HttpRequest.post(url).form(params).execute().body();
