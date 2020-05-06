@@ -34,7 +34,7 @@ public class PLLiveCommonResult extends PLLiveBaseResult {
 
     @Override
     public String toString() {
-        return "PLVodCommonResult{" +
+        return "PLLiveCommonResult{" +
                 "data=" + data +
                 ", code=" + code +
                 ", status='" + status + '\'' +

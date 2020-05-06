@@ -3,6 +3,7 @@ package com.lamdaer.polyv.live.bean.request;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
+import com.lamdaer.polyv.live.enumeration.ErrorCodeEnum;
 
 import java.util.*;
 
@@ -97,7 +98,12 @@ public abstract class PLLiveBaseRequest {
         }
         for (String key : parameter.keySet()) {
             String value = parameter.get(key) + "";
-            if (value.equalsIgnoreCase("null") || StrUtil.hasBlank(value) || key.equalsIgnoreCase("appSecret") || key.equalsIgnoreCase("sign")) {
+            if (value.equalsIgnoreCase("null")
+                    || StrUtil.hasBlank(value)
+                    || key.equalsIgnoreCase("appSecret")
+                    || key.equalsIgnoreCase("sign")
+                    || value.equals(String.valueOf(ErrorCodeEnum.DEFAULT.getCode()))
+            ) {
                 continue;
             }
             result.put(key, value);
