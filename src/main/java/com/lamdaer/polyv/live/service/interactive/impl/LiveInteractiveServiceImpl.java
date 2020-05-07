@@ -2,6 +2,7 @@ package com.lamdaer.polyv.live.service.interactive.impl;
 
 import com.lamdaer.polyv.live.bean.request.interactive.GetChannelLotteryRecordRequest;
 import com.lamdaer.polyv.live.bean.request.interactive.GetWinnerDetailRequest;
+import com.lamdaer.polyv.live.bean.request.interactive.GiveLikeRequest;
 import com.lamdaer.polyv.live.bean.result.PLLiveCommonResult;
 import com.lamdaer.polyv.live.constant.ApiConstants;
 import com.lamdaer.polyv.live.service.PLLiveRequestAbstractService;
@@ -24,6 +25,12 @@ public class LiveInteractiveServiceImpl extends PLLiveRequestAbstractService imp
     @Override
     public PLLiveCommonResult getWinnerDetail(GetWinnerDetailRequest request) {
         PLLiveCommonResult result = getRequest(ApiConstants.GET_WINNER_DETAIL, request.getParams());
+        return result;
+    }
+
+    @Override
+    public PLLiveCommonResult giveLike(GiveLikeRequest request) {
+        PLLiveCommonResult result = postRequest(ApiConstants.GIVE_LIKE.replace("{channelId}", String.valueOf(request.getChannelId())), request.getParams());
         return result;
     }
 }

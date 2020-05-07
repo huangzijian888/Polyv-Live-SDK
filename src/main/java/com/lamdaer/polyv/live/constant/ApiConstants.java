@@ -23,6 +23,11 @@ public class ApiConstants {
      */
     public static final String GET_WINNER_DETAIL = "http://api.polyv.net/live/v3/channel/lottery/get-winner-detail";
 
+    /**
+     * 发送点赞
+     */
+    public static final String GIVE_LIKE = "http://api.polyv.net/live/v2/channels/{channelId}/like";
+
     private ApiConstants() {
     }
 }
