@@ -77,7 +77,7 @@ public abstract class PLLiveBaseRequest {
      * @param appSecret 直播后台-开发设置-身份认证-AppSecret
      * @return 签名值
      */
-    public String generateSign(Map<String, Object> parameter, String appSecret) {
+    protected String generateSign(Map<String, Object> parameter, String appSecret) {
         String concatStr = concatParams(parameter);
         String plain = appSecret + concatStr + appSecret;
         String encrypted = SecureUtil.md5(plain);
@@ -91,7 +91,7 @@ public abstract class PLLiveBaseRequest {
      * @param parameter 需要过滤的参数集合
      * @return 过滤后的参数集合
      */
-    private Map<String, Object> paraFilter(Map<String, Object> parameter) {
+    protected Map<String, Object> paraFilter(Map<String, Object> parameter) {
         Map<String, Object> result = new HashMap<>();
         if (parameter == null || parameter.size() <= 0) {
             return result;

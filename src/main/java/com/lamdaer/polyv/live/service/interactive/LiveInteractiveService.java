@@ -2,6 +2,8 @@ package com.lamdaer.polyv.live.service.interactive;
 
 import com.lamdaer.polyv.live.bean.request.interactive.GetChannelLotteryRecordRequest;
 import com.lamdaer.polyv.live.bean.request.interactive.GetWinnerDetailRequest;
+import com.lamdaer.polyv.live.bean.request.interactive.GiveLikeRequest;
+import com.lamdaer.polyv.live.bean.request.interactive.SendRewardMessageRequest;
 import com.lamdaer.polyv.live.bean.result.PLLiveCommonResult;
 
 /**
@@ -27,4 +29,20 @@ public interface LiveInteractiveService {
      * @return 查询结果
      */
     PLLiveCommonResult getWinnerDetail(GetWinnerDetailRequest request);
+
+    /**
+     * 发送点赞
+     *
+     * @param request
+     * @return 响应结果
+     */
+    PLLiveCommonResult giveLike(GiveLikeRequest request);
+
+    /**
+     * 发送打赏消息
+     *
+     * @param request
+     * @return 响应结果
+     */
+    PLLiveCommonResult sendRewardMessage(SendRewardMessageRequest request);
 }
