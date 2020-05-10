@@ -33,6 +33,19 @@ public class ApiConstants {
      */
     public static final String SEND_REWARD_MESSAGE = "http://api.polyv.net/live/v3/channel/chat/send-reward-msg";
 
+    /**
+     * 查询频道问卷详情
+     * 文档地址：http://dev.polyv.net/2019/liveproduct/l-api/zbhd/get-questionnaire-detail/
+     */
+    public static final String GET_DETAILS_QUESTIONNAIRE = "https://api.polyv.net/live/v3/channel/questionnaire/detail";
+
+    /**
+     * 查询频道问卷列表
+     * 文档地址：http://dev.polyv.net/2019/liveproduct/l-api/zbhd/list-questionaire/
+     */
+    public static final String GET_CHANNEL_QUESTIONNAIRE_LIST = "https://api.polyv.net/live/v3/channel/questionnaire/list";
+
+
     private ApiConstants() {
     }
 }

@@ -1,9 +1,6 @@
 package com.lamdaer.polyv.live.service.interactive;
 
-import com.lamdaer.polyv.live.bean.request.interactive.GetChannelLotteryRecordRequest;
-import com.lamdaer.polyv.live.bean.request.interactive.GetWinnerDetailRequest;
-import com.lamdaer.polyv.live.bean.request.interactive.GiveLikeRequest;
-import com.lamdaer.polyv.live.bean.request.interactive.SendRewardMessageRequest;
+import com.lamdaer.polyv.live.bean.request.interactive.*;
 import com.lamdaer.polyv.live.bean.result.PLLiveCommonResult;
 
 /**
@@ -45,4 +42,23 @@ public interface LiveInteractiveService {
      * @return 响应结果
      */
     PLLiveCommonResult sendRewardMessage(SendRewardMessageRequest request);
+
+    /**
+     * 查询频道问卷详情
+     * http://dev.polyv.net/2019/liveproduct/l-api/zbhd/get-questionnaire-detail/
+     *
+     * @param request
+     * @return 查询结果
+     */
+    PLLiveCommonResult getDetailsQuestionnaire(GetQuestionnaireDetailsRequest request);
+
+    /**
+     * 查询频道问卷列表
+     * http://dev.polyv.net/2019/liveproduct/l-api/zbhd/list-questionaire/
+     *
+     * @param request
+     * @return 查询结果
+     */
+    PLLiveCommonResult getChannelQuestionnaireList(GetChannelQuestionnaireListRequest request);
+
 }
