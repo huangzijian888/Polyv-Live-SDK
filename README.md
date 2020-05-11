@@ -1,6 +1,6 @@
 # 保利威-云直播 Java SDK
 
-[![](http://polyv.89525.com/polyv_LOGO.png)](http://www.polyv.net)
+[![](LOGO.png)](http://www.polyv.net)
 
 本项目依托于 [保利威云直播 API](http://dev.polyv.net/category/liveproduct/l-api/) 对文档中的接口进行二次封装，提供一个拿来即用的 SDK 工具。
 
