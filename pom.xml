@@ -6,7 +6,7 @@
 
     <groupId>com.lamdaer</groupId>
     <artifactId>polyv-live-sdk</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <name>POLYV-LIVE-SDK</name>
     <description>保利威云直播JAVA工具包</description>
     <url>http://www.polyv.net</url>
@@ -43,8 +43,7 @@
         <developer>
             <name>Lamdaer</name>
             <email>huangzijian@lamdaer.com</email>
-            <organization>Polyv</organization>
-            <organizationUrl>http://www.polyv.net</organizationUrl>
+            <url>https://github.com/huangzijian888</url>
         </developer>
     </developers>
 
