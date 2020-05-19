@@ -6,3 +6,6 @@ before_script:
 script:
   - fossa init
   - fossa analyze
+env:
+  global:
+    - FOSSA_API_KEY: $FOSSA_API_KEY
