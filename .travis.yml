@@ -8,4 +8,4 @@ script:
   - fossa analyze
 env:
   global:
-    - FOSSA_API_KEY: $FOSSA_API_KEY
+    - FOSSA_API_KEY: ${FOSSA_API_KEY}
