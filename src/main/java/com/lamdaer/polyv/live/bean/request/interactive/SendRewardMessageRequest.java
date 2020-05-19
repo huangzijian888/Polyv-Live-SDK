@@ -1,6 +1,6 @@
 package com.lamdaer.polyv.live.bean.request.interactive;
 
-import com.lamdaer.polyv.live.bean.request.PLLiveBaseRequest;
+import com.lamdaer.polyv.live.bean.request.PolyvLiveBaseRequest;
 
 /**
  * 发送打赏消息
@@ -8,7 +8,7 @@ import com.lamdaer.polyv.live.bean.request.PLLiveBaseRequest;
  * @author lamdaer
  * createTime 2020/5/8
  */
-public class SendRewardMessageRequest extends PLLiveBaseRequest {
+public class SendRewardMessageRequest extends PolyvLiveBaseRequest {
 
     /**
      * <pre>

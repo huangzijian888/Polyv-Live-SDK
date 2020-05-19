@@ -1,6 +1,6 @@
 package com.lamdaer.polyv.live.bean.request.interactive;
 
-import com.lamdaer.polyv.live.bean.request.PLLiveBaseRequest;
+import com.lamdaer.polyv.live.bean.request.PolyvLiveBaseRequest;
 
 /**
  * 查询频道问卷详情
@@ -9,7 +9,7 @@ import com.lamdaer.polyv.live.bean.request.PLLiveBaseRequest;
  * @author lamdaer
  * createTime 2020/5/9
  */
-public class GetQuestionnaireDetailsRequest extends PLLiveBaseRequest {
+public class GetQuestionnaireDetailsRequest extends PolyvLiveBaseRequest {
 
     /**
      * <pre>

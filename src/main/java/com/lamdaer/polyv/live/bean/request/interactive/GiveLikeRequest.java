@@ -1,7 +1,7 @@
 package com.lamdaer.polyv.live.bean.request.interactive;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.lamdaer.polyv.live.bean.request.PLLiveBaseRequest;
+import com.lamdaer.polyv.live.bean.request.PolyvLiveBaseRequest;
 import com.lamdaer.polyv.live.enumeration.ErrorCodeEnum;
 
 import java.util.Map;
@@ -12,7 +12,7 @@ import java.util.Map;
  * @author lamdaer
  * createTime 2020/5/8
  */
-public class GiveLikeRequest extends PLLiveBaseRequest {
+public class GiveLikeRequest extends PolyvLiveBaseRequest {
 
     /**
      * <pre>

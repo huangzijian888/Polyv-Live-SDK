@@ -6,7 +6,7 @@ package com.lamdaer.polyv.live.bean.result;
  * @author lamdaer
  * createTime 2020/05/03
  */
-public class PLLiveCommonResult extends PLLiveBaseResult {
+public class PolyvLiveCommonResult extends PolyvLiveBaseResult {
 
     /**
      * <pre>
@@ -17,7 +17,7 @@ public class PLLiveCommonResult extends PLLiveBaseResult {
      */
     private Object data;
 
-    public PLLiveCommonResult(int code, String status, String message, Object data) {
+    public PolyvLiveCommonResult(int code, String status, String message, Object data) {
         this.setData(data);
         super.code = code;
         super.status = status;

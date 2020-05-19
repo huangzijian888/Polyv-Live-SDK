@@ -1,7 +1,7 @@
 package com.lamdaer.polyv.live.service.interactive;
 
 import com.lamdaer.polyv.live.bean.request.interactive.*;
-import com.lamdaer.polyv.live.bean.result.PLLiveCommonResult;
+import com.lamdaer.polyv.live.bean.result.PolyvLiveCommonResult;
 
 /**
  * 直播互动 Service
@@ -9,7 +9,7 @@ import com.lamdaer.polyv.live.bean.result.PLLiveCommonResult;
  * @author lamdaer
  * createTime 2020/5/6
  */
-public interface LiveInteractiveService {
+public interface PolyvLiveInteractiveService {
 
     /**
      * 获取频道抽奖记录列表
@@ -17,7 +17,7 @@ public interface LiveInteractiveService {
      * @param request 请求
      * @return 查询结果
      */
-    PLLiveCommonResult getLotteryRecord(GetChannelLotteryRecordRequest request);
+    PolyvLiveCommonResult getLotteryRecord(GetChannelLotteryRecordRequest request);
 
     /**
      * 获取频道单场抽奖的中奖记录
@@ -25,7 +25,7 @@ public interface LiveInteractiveService {
      * @param request
      * @return 查询结果
      */
-    PLLiveCommonResult getWinnerDetail(GetWinnerDetailRequest request);
+    PolyvLiveCommonResult getWinnerDetail(GetWinnerDetailRequest request);
 
     /**
      * 发送点赞
@@ -33,7 +33,7 @@ public interface LiveInteractiveService {
      * @param request
      * @return 响应结果
      */
-    PLLiveCommonResult giveLike(GiveLikeRequest request);
+    PolyvLiveCommonResult giveLike(GiveLikeRequest request);
 
     /**
      * 发送打赏消息
@@ -41,7 +41,7 @@ public interface LiveInteractiveService {
      * @param request
      * @return 响应结果
      */
-    PLLiveCommonResult sendRewardMessage(SendRewardMessageRequest request);
+    PolyvLiveCommonResult sendRewardMessage(SendRewardMessageRequest request);
 
     /**
      * 查询频道问卷详情
@@ -50,7 +50,7 @@ public interface LiveInteractiveService {
      * @param request
      * @return 查询结果
      */
-    PLLiveCommonResult getDetailsQuestionnaire(GetQuestionnaireDetailsRequest request);
+    PolyvLiveCommonResult getDetailsQuestionnaire(GetQuestionnaireDetailsRequest request);
 
     /**
      * 查询频道问卷列表
@@ -59,6 +59,6 @@ public interface LiveInteractiveService {
      * @param request
      * @return 查询结果
      */
-    PLLiveCommonResult getChannelQuestionnaireList(GetChannelQuestionnaireListRequest request);
+    PolyvLiveCommonResult getChannelQuestionnaireList(GetChannelQuestionnaireListRequest request);
 
 }

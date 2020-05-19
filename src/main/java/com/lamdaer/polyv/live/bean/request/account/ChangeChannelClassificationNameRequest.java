@@ -1,6 +1,6 @@
 package com.lamdaer.polyv.live.bean.request.account;
 
-import com.lamdaer.polyv.live.bean.request.PLLiveBaseRequest;
+import com.lamdaer.polyv.live.bean.request.PolyvLiveBaseRequest;
 
 /**
  * 修改直播频道分类名称
@@ -8,7 +8,7 @@ import com.lamdaer.polyv.live.bean.request.PLLiveBaseRequest;
  * @author lamdaer
  * createTime 2020/5/4
  */
-public class ChangeChannelClassificationNameRequest extends PLLiveBaseRequest {
+public class ChangeChannelClassificationNameRequest extends PolyvLiveBaseRequest {
 
     /**
      * <pre>

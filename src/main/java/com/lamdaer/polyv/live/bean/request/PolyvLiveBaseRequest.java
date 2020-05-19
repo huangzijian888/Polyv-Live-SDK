@@ -13,7 +13,7 @@ import java.util.*;
  * @author lamdaer
  * createTime 2020/5/4
  */
-public abstract class PLLiveBaseRequest {
+public abstract class PolyvLiveBaseRequest {
 
     /**
      * <pre>
@@ -51,7 +51,7 @@ public abstract class PLLiveBaseRequest {
      */
     protected String sign;
 
-    public PLLiveBaseRequest(String appId, String appSecret) {
+    public PolyvLiveBaseRequest(String appId, String appSecret) {
         this.appId = appId;
         this.appSecret = appSecret;
         this.timestamp = System.currentTimeMillis();
@@ -164,7 +164,7 @@ public abstract class PLLiveBaseRequest {
 
     @Override
     public String toString() {
-        return "PLLiveBaseRequest{" +
+        return "PolyvLiveBaseRequest{" +
                 "appId='" + appId + '\'' +
                 ", appSecret='" + appSecret + '\'' +
                 ", timestamp=" + timestamp +

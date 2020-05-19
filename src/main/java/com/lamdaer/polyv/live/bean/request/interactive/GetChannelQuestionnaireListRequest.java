@@ -1,6 +1,6 @@
 package com.lamdaer.polyv.live.bean.request.interactive;
 
-import com.lamdaer.polyv.live.bean.request.PLLiveBaseRequest;
+import com.lamdaer.polyv.live.bean.request.PolyvLiveBaseRequest;
 import com.lamdaer.polyv.live.enumeration.ErrorCodeEnum;
 
 /**
@@ -10,7 +10,7 @@ import com.lamdaer.polyv.live.enumeration.ErrorCodeEnum;
  * @author lamdaer
  * createTime 2020/5/9
  */
-public class GetChannelQuestionnaireListRequest extends PLLiveBaseRequest {
+public class GetChannelQuestionnaireListRequest extends PolyvLiveBaseRequest {
 
     /**
      * <pre>

@@ -1,10 +1,11 @@
 package com.lamdaer.polyv.live.service;
 
 import cn.hutool.http.HttpRequest;
+import cn.hutool.http.HttpStatus;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSON;
 import cn.hutool.json.JSONUtil;
-import com.lamdaer.polyv.live.bean.result.PLLiveCommonResult;
+import com.lamdaer.polyv.live.bean.result.PolyvLiveCommonResult;
 
 import java.util.Map;
 
@@ -14,7 +15,7 @@ import java.util.Map;
  * @author lamdaer
  * createTime 2020/05/03
  */
-public abstract class PLLiveRequestAbstractService {
+public abstract class PolyvLiveRequestAbstractService {
 
     /**
      * get 请求
@@ -23,7 +24,7 @@ public abstract class PLLiveRequestAbstractService {
      * @param params 请求参数
      * @return 响应结果
      */
-    protected PLLiveCommonResult getRequest(String url, Map<String, Object> params) {
+    protected PolyvLiveCommonResult getRequest(String url, Map<String, Object> params) {
         String result = HttpUtil.get(url, params);
         return getPlLiveCommonResult(result);
     }
@@ -35,7 +36,7 @@ public abstract class PLLiveRequestAbstractService {
      * @param params 请求参数
      * @return 响应结果
      */
-    protected PLLiveCommonResult postRequest(String url, Map<String, Object> params) {
+    protected PolyvLiveCommonResult postRequest(String url, Map<String, Object> params) {
         String result = HttpRequest.post(url).form(params).execute().body();
         return getPlLiveCommonResult(result);
     }
@@ -46,14 +47,14 @@ public abstract class PLLiveRequestAbstractService {
      * @param result 原始返回信息
      * @return 处理后的返回信息
      */
-    private PLLiveCommonResult getPlLiveCommonResult(String result) {
+    private PolyvLiveCommonResult getPlLiveCommonResult(String result) {
         JSON jsonResult = JSONUtil.parse(result);
         int code = (int) jsonResult.getByPath("code");
         String status = (String) jsonResult.getByPath("status");
         String message = (String) jsonResult.getByPath("message");
-        if (200 == code) {
-            return new PLLiveCommonResult(code, status, message, jsonResult.getByPath("data"));
+        if (HttpStatus.HTTP_OK == code) {
+            return new PolyvLiveCommonResult(code, status, message, jsonResult.getByPath("data"));
         }
-        return new PLLiveCommonResult(code, status, message, null);
+        return new PolyvLiveCommonResult(code, status, message, null);
     }
 }

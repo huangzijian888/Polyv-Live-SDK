@@ -1,6 +1,6 @@
 package com.lamdaer.polyv.live.bean.request.interactive;
 
-import com.lamdaer.polyv.live.bean.request.PLLiveBaseRequest;
+import com.lamdaer.polyv.live.bean.request.PolyvLiveBaseRequest;
 import com.lamdaer.polyv.live.enumeration.ErrorCodeEnum;
 
 /**
@@ -9,7 +9,7 @@ import com.lamdaer.polyv.live.enumeration.ErrorCodeEnum;
  * @author lamdaer
  * createTime 2020/5/6
  */
-public class GetChannelLotteryRecordRequest extends PLLiveBaseRequest {
+public class GetChannelLotteryRecordRequest extends PolyvLiveBaseRequest {
 
     /**
      * <pre>

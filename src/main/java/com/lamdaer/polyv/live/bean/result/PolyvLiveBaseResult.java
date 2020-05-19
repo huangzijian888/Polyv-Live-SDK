@@ -6,7 +6,7 @@ package com.lamdaer.polyv.live.bean.result;
  * @author lamdaer
  * createTime 2020/05/03
  */
-public abstract class PLLiveBaseResult {
+public abstract class PolyvLiveBaseResult {
 
     /**
      * <pre>
@@ -70,7 +70,7 @@ public abstract class PLLiveBaseResult {
 
     @Override
     public String toString() {
-        return "PLVodBaseResult{" +
+        return "PolyvLiveBaseResult{" +
                 "code=" + code +
                 ", status='" + status + '\'' +
                 ", message='" + message + '\'' +
