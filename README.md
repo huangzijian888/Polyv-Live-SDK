@@ -4,7 +4,11 @@
 
 本项目依托于 [保利威云直播 API](http://dev.polyv.net/category/liveproduct/l-api/) 对文档中的接口进行二次封装，提供一个拿来即用的 SDK 工具。
 
-[![Travis (.org)](https://img.shields.io/travis/huangzijian888/Polyv-Live-SDK)](https://travis-ci.org/github/huangzijian888/Polyv-Live-SDK)  [![GitHub](https://img.shields.io/github/license/huangzijian888/Polyv-Live-SDK)](https://github.com/huangzijian888/Polyv-Live-SDK/blob/master/LICENSE)    [![Maven Central with version prefix filter](https://img.shields.io/maven-central/v/com.lamdaer/polyv-live-sdk/1.0.1)](https://search.maven.org/artifact/com.lamdaer/polyv-live-sdk/1.0.1/jar)  
+[![Travis (.org)](https://img.shields.io/travis/huangzijian888/Polyv-Live-SDK)](https://travis-ci.org/github/huangzijian888/Polyv-Live-SDK) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhuangzijian888%2FPolyv-Live-SDK.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhuangzijian888%2FPolyv-Live-SDK?ref=badge_shield)
+ [![GitHub](https://img.shields.io/github/license/huangzijian888/Polyv-Live-SDK)](https://github.com/huangzijian888/Polyv-Live-SDK/blob/master/LICENSE)    [![Maven Central with version prefix filter](https://img.shields.io/maven-central/v/com.lamdaer/polyv-live-sdk/1.0.1)](https://search.maven.org/artifact/com.lamdaer/polyv-live-sdk/1.0.1/jar)  
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhuangzijian888%2FPolyv-Live-SDK.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhuangzijian888%2FPolyv-Live-SDK?ref=badge_large)
 
 ## 集成
 
