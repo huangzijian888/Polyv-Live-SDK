@@ -50,4 +50,9 @@ public class PolyvLiveInteractiveServiceImpl extends PolyvLiveRequestAbstractSer
         return result;
     }
 
+    @Override
+    public PolyvLiveCommonResult setLotteryWinners(SetLotteryWinnersRequest request) {
+        PolyvLiveCommonResult result = postRequest(ApiConstants.SET_LOTTERY_WINNERS, request.getParams());
+        return result;
+    }
 }

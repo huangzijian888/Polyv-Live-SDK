@@ -61,4 +61,14 @@ public interface PolyvLiveInteractiveService {
      */
     PolyvLiveCommonResult getChannelQuestionnaireList(GetChannelQuestionnaireListRequest request);
 
+    /**
+     * 设置抽奖中奖者信息
+     * http://dev.polyv.net/2019/liveproduct/l-api/zbhd/tjzjxx/
+     *
+     * @param request
+     * @return PolyvLiveCommonResult
+     */
+    PolyvLiveCommonResult setLotteryWinners(SetLotteryWinnersRequest request);
+
+
 }

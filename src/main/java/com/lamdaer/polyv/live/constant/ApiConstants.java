@@ -45,6 +45,11 @@ public class ApiConstants {
      */
     public static final String GET_CHANNEL_QUESTIONNAIRE_LIST = "https://api.polyv.net/live/v3/channel/questionnaire/list";
 
+    /**
+     * 设置抽奖中奖者信息
+     * http://dev.polyv.net/2019/liveproduct/l-api/zbhd/tjzjxx/
+     */
+    public static final String SET_LOTTERY_WINNERS = "http://api.polyv.net/live/v3/channel/chat/add-receive-info";
 
     private ApiConstants() {
     }
