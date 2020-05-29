@@ -7,8 +7,16 @@ package com.lamdaer.polyv.live.enumeration;
  * createTime 2020/5/4
  */
 public enum ErrorCodeEnum {
+
+    /**
+     * 默认值
+     */
     DEFAULT(-99999, "int类型默认值"),
-    ;
+
+    /**
+     * JSON解析错误
+     */
+    JSON_PARSE_ERROR(10000, "json parse error");
 
     /**
      * <pre>
@@ -29,6 +37,8 @@ public enum ErrorCodeEnum {
     private String msg;
 
     ErrorCodeEnum(int code, String msg) {
+        this.code = code;
+        this.msg = msg;
     }
 
     public int getCode() {
