@@ -13,7 +13,6 @@ import com.lamdaer.polyv.live.service.interactive.PolyvLiveInteractiveService;
  * createTime 2020/5/6
  */
 public class PolyvLiveInteractiveServiceImpl extends PolyvLiveRequestAbstractService implements PolyvLiveInteractiveService {
-
     @Override
     public PolyvLiveCommonResult getLotteryRecord(GetChannelLotteryRecordRequest request) {
         PolyvLiveCommonResult result = getRequest(ApiConstants.GET_CHANNEL_LOTTERY_RECORD, request.getParams());
@@ -54,5 +53,14 @@ public class PolyvLiveInteractiveServiceImpl extends PolyvLiveRequestAbstractSer
     public PolyvLiveCommonResult setLotteryWinners(SetLotteryWinnersRequest request) {
         PolyvLiveCommonResult result = postRequest(ApiConstants.SET_LOTTERY_WINNERS, request.getParams());
         return result;
+    }
+
+    @Override
+    public PolyvLiveCommonResult setChannelQuestionnaire(SetChannelQuestionnaireRequest request) {
+        return postRequest(ApiConstants.SET_CHANNEL_QUESTIONNAIRE
+                .replace("{{channelId}}", String.valueOf(request.getChannelId()))
+                .replace("{{appId}}", request.getAppId())
+                .replace("{{timestamp}}", String.valueOf(request.getTimestamp()))
+                .replace("{{sign}}", request.getSign()), request.getParams());
     }
 }
