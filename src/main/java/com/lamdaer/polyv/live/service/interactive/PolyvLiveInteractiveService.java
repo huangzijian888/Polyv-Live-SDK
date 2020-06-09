@@ -79,4 +79,14 @@ public interface PolyvLiveInteractiveService {
      */
     PolyvLiveCommonResult setChannelQuestionnaire(SetChannelQuestionnaireRequest request);
 
+    /**
+     * 查询签到结果
+     * http://dev.polyv.net/2018/liveproduct/l-api/zbhd/checkin-list/
+     *
+     * @param resultRequest
+     * @return
+     */
+    PolyvLiveCommonResult getCheckResultRequest(GetCheckResultRequest resultRequest);
+
+
 }

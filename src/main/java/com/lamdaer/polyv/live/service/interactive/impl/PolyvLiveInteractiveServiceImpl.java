@@ -63,4 +63,9 @@ public class PolyvLiveInteractiveServiceImpl extends PolyvLiveRequestAbstractSer
                 .replace("{{timestamp}}", String.valueOf(request.getTimestamp()))
                 .replace("{{sign}}", request.getSign()), request.getParams());
     }
+
+    @Override
+    public PolyvLiveCommonResult getCheckResultRequest(GetCheckResultRequest resultRequest) {
+        return getRequest(ApiConstants.GET_CHECK_RESULT, resultRequest.getParams());
+    }
 }
