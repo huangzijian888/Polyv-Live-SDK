@@ -51,6 +51,18 @@ public class ApiConstants {
      */
     public static final String SET_LOTTERY_WINNERS = "http://api.polyv.net/live/v3/channel/chat/add-receive-info";
 
+    /**
+     * 设置频道问卷信息
+     * http://dev.polyv.net/2019/liveproduct/l-api/zbhd/add-edit-questionnaire/
+     */
+    public static final String SET_CHANNEL_QUESTIONNAIRE = "https://api.polyv.net/live/v3/channel/questionnaire/add-edit-questionnaire?channelId={{channelId}}&appId={{appId}}&timestamp={{timestamp}}&sign={{sign}}";
+
+    /**
+     * 查询签到结果
+     * http://dev.polyv.net/2018/liveproduct/l-api/zbhd/checkin-list/
+     */
+    public static final String GET_CHECK_RESULT = "https://api.polyv.net/live/v3/channel/checkin/list";
+
     private ApiConstants() {
     }
 }
