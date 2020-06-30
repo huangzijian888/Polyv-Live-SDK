@@ -88,5 +88,14 @@ public interface PolyvLiveInteractiveService {
      */
     PolyvLiveCommonResult getCheckResultRequest(GetCheckResultRequest resultRequest);
 
+    /**
+     * 查询指定签到ID的签到记录
+     * https://dev.polyv.net/2019/liveproduct/l-api/zbhd/get-checkin/
+     *
+     * @param getCheckInsRequest
+     * @return
+     */
+    PolyvLiveCommonResult getCheckIns(GetCheckInsRequest getCheckInsRequest);
+
 
 }

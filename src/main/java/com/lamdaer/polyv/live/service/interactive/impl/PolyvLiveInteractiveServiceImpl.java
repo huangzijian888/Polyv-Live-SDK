@@ -68,4 +68,10 @@ public class PolyvLiveInteractiveServiceImpl extends PolyvLiveRequestAbstractSer
     public PolyvLiveCommonResult getCheckResultRequest(GetCheckResultRequest resultRequest) {
         return getRequest(ApiConstants.GET_CHECK_RESULT, resultRequest.getParams());
     }
+
+    @Override
+    public PolyvLiveCommonResult getCheckIns(GetCheckInsRequest getCheckInsRequest) {
+        return getRequest(ApiConstants.GET_CHECK_IN, getCheckInsRequest.getParams());
+    }
+
 }

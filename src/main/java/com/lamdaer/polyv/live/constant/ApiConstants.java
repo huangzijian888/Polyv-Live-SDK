@@ -63,6 +63,12 @@ public class ApiConstants {
      */
     public static final String GET_CHECK_RESULT = "https://api.polyv.net/live/v3/channel/checkin/list";
 
+    /**
+     * 查询指定签到ID的签到记录
+     * https://dev.polyv.net/2019/liveproduct/l-api/zbhd/get-checkin/
+     */
+    public static final String GET_CHECK_IN = "https://api.polyv.net/live/v3/channel/chat/get-checkins";
+
     private ApiConstants() {
     }
 }
